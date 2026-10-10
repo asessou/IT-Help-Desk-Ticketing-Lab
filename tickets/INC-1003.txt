@@ -1,0 +1,45 @@
+# Incident Ticket: INC-1003
+
+## Incident Information
+- Ticket ID: INC-1003
+- Organization: Northstar Medical Group (NMG)
+- Category: Application Access / Service Outage
+- Reported By: Finance Department
+- Date Reported: October 9, 2026
+- Status: Open
+- Priority: Pending impact and urgency assessment
+
+## Issue Description
+Twenty Finance employees report that they cannot access the application used to process customer orders. The issue reportedly began 10 minutes before the incident was reported, and customer orders are waiting to be processed.
+
+## Business Impact
+- Reported Scope: 20 Finance employees
+- Reported Impact: Customer-order processing is delayed.
+- Urgency: Requires assessment because orders are waiting.
+- Verification Status: The number of affected users and application availability have not yet been independently verified.
+
+## Initial Troubleshooting
+- No technical tests have been performed yet.
+- No root cause has been established.
+- No system changes have been made.
+- Check for an existing outage or related incident before performing disruptive troubleshooting.
+
+## Technician Notes
+Treat the initial details as user-reported information until verified. Record the results of each check and avoid making unsupported assumptions about the cause.
+
+## Planned Follow-Up
+- Confirm how many users and departments are affected.
+- Check the ticketing system and service-status announcements for an existing incident.
+- Verify application availability and investigate relevant errors or alerts.
+- Assess business impact and urgency using the organization's incident-priority procedure.
+- Escalate promptly according to policy if the scope and impact warrant it.
+- Record troubleshooting results, communications, and any resolution.
+
+## Resolution
+Pending investigation.
+
+## Closure Criteria
+Keep the ticket open until the issue is resolved or transferred according to procedure, the outcome is documented, and the appropriate closure requirements are met.
+
+## Disclaimer
+This is a fictional training scenario. The reported outage and employee impact are simulated for educational purposes.
