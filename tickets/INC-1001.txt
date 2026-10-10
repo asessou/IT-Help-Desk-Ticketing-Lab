@@ -1,0 +1,69 @@
+﻿# Incident Ticket: INC-1001
+
+## User Information
+- User: Emily Johnson
+- Department: Human Resources
+- Location: Northstar Medical Group
+
+## Incident Details
+- Category: Account Access
+- Issue: Unable to sign in to company account
+- Date Reported: October 9, 2026
+- Status: Open
+- Priority: Not yet assigned
+
+## User-Reported Symptoms
+Emily reports that she cannot sign in to her company account. The exact error message and whether the issue affects other applications have not yet been confirmed.
+
+## Initial Troubleshooting
+- Checked the Active Directory account; it exists but is disabled.
+- Confirmed the account is not locked out.
+- Confirmed the account is located in the Disabled Users OU.
+- Found only Domain Users in the current group membership.
+- Reviewed the IAM offboarding log and found a matching entry for ejohnson.
+- The log records Employee Termination as the reason.
+- The log timestamp matches the account's Modified timestamp.
+- No account changes were made.
+## Resolution
+Pending investigation.
+
+## Technician Notes
+Record each troubleshooting step, its result, and any changes made to the account. Do not record passwords or other sensitive authentication information.
+
+- Requested the exact sign-in error message; awaiting user confirmation.
+- Asked when the issue began and whether other company services are affected.
+- Root cause not yet established; no account changes performed.
+
+- Active Directory check confirmed the account exists but is disabled.
+- Account is not locked out.
+- Account is located in the Disabled Users OU.
+- Current group membership shows Domain Users only.
+- Possible prior offboarding identified; employment status and authorization for access restoration must be verified before making account changes.
+
+- Reviewed the PowerShell IAM offboarding log at `C:\NMG-IAM\logs\leaver.log`.
+- Found an entry dated October 7, 2026, recording the offboarding of `ejohnson` for â€œEmployee Termination.â€
+- The log records removal from HR-Users and movement to Disabled Users.
+- The log timestamp matches the account's Active Directory Modified timestamp.
+- Findings strongly suggest the account was disabled during the prior IAM lab offboarding exercise.
+- Employment status and authorization for access restoration remain unverified.
+- No changes were made to the account.
+
+## Planned Follow-Up
+- Confirm the user's current employment status through the approved process.
+- Verify authorization before restoring account access.
+- Obtain the user's exact sign-in error and determine whether other services are affected.
+- Assign ticket priority after assessing business impact and urgency.
+
+## Initial Troubleshooting
+- Checked the Active Directory account; it exists but is disabled.
+- Confirmed the account is not locked out.
+- Confirmed the account is located in the Disabled Users OU.
+- Found only Domain Users in the current group membership.
+- Reviewed the IAM offboarding log and found a matching entry for ejohnson.
+- No account changes were made.
+
+- Pending confirmation of employment status and authorization from the appropriate HR contact before any access restoration.
+
+- Impact: Undetermined; the scope of affected users and business functions has not been verified.
+- Urgency: Undetermined; business deadlines and operational consequences have not been established.
+- Priority: Pending impact, urgency, and authorization verification.

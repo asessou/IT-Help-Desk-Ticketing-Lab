@@ -1,0 +1,40 @@
+﻿# Incident Ticket: INC-1002
+
+## User Information
+- User: Michael Anderson
+- Department: Finance
+- Location: Northstar Medical Group
+
+## Incident Details
+- Category: Network Connectivity
+- Issue: Workstation cannot access the company network
+- Date Reported: October 9, 2026
+- Status: Open
+- Priority: Not yet assigned
+
+## User-Reported Symptoms
+The user reports that the workstation cannot access the company network. The exact error, scope, and duration have not yet been confirmed.
+
+## Initial Troubleshooting
+- Confirmed the default gateway (192.168.1.1) responds to ping with 0% packet loss.
+- Confirmed public IP connectivity by pinging 1.1.1.1 with 0% packet loss.
+- Confirmed DNS resolution succeeds for google.com and NMG.com.
+- Confirmed the DNS Server and Active Directory Domain Services (NTDS) services are running on WIN-KEAG8HVGCA7.
+- Confirmed the server is joined to the NMG.com domain and uses IPv4 address 192.168.1.60.
+- Reverse lookup for 192.168.1.60 failed because no applicable reverse lookup zone or PTR record was found.
+- Limitation: These tests were performed on the Windows Server 2022 domain controller, not on Michael Anderson's workstation. The reported workstation issue remains unverified.
+
+## Resolution
+Pending investigation.
+
+## Technician Notes
+Document each test, its result, and any changes made. Do not record passwords or other sensitive information.
+
+## Planned Follow-Up
+- Obtain access to Michael Anderson's workstation or coordinate with the user to reproduce the reported issue.
+- Confirm the exact error, when the issue began, and whether other users or services are affected.
+- On the affected workstation, inspect IP configuration and test gateway, external IP, and DNS connectivity.
+- Review the workstation's DNS settings and Active Directory connectivity if initial tests indicate a problem.
+- Assign priority after confirming business impact and urgency.
+- Keep the incident open until the issue is investigated and the outcome is documented.
+
